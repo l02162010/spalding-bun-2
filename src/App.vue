@@ -1,17 +1,17 @@
 <template>
-  <div class="h-full flex flex-col justify-center items-center">
+  <div class="w-full h-full flex flex-col justify-center items-center">
     <div class="flex justify-evenly w-full">
       <div @click="lang = 'zh-TW'">
-        <Vue3Lottie :animationData="fireWork" :height="200" :width="200" />
+        <Vue3Lottie :animationData="fireWork" :height="100" :width="100" />
       </div>
       <div></div>
       <div class="lottie-reverse" @click="lang = 'el-GR'">
-        <Vue3Lottie :animationData="fireWork" :height="200" :width="200" />
+        <Vue3Lottie :animationData="fireWork" :height="100" :width="100" />
       </div>
     </div>
-    <div class="flex justify-evenly w-full">
+    <div class="flex justify-evenly items-center w-full">
       <div @click="lang = 'eff'">
-        <Vue3Lottie :animationData="fireWork" :height="200" :width="200" />
+        <Vue3Lottie :animationData="fireWork" :height="80" :width="80" />
       </div>
       <div class="text-center">
         <template v-if="lang === 'eff'">
@@ -80,16 +80,16 @@
         </template>
       </div>
       <div class="lottie-reverse" @click="lang = 'dongbei-CN'">
-        <Vue3Lottie :animationData="fireWork" :height="200" :width="200" />
+        <Vue3Lottie :animationData="fireWork" :height="80" :width="80" />
       </div>
     </div>
     <div class="flex justify-evenly w-full">
       <div @click="lang = 'en-US'">
-        <Vue3Lottie :animationData="fireWork" :height="200" :width="200" />
+        <Vue3Lottie :animationData="fireWork" :height="120" :width="120" />
       </div>
       <div></div>
       <div class="lottie-reverse" @click="lang = 'me'">
-        <Vue3Lottie :animationData="fireWork" :height="200" :width="200" />
+        <Vue3Lottie :animationData="fireWork" :height="120" :width="120" />
       </div>
     </div>
   </div>
@@ -125,7 +125,7 @@ export default {
 
 #app {
   font-family: 'elffont', sans-serif;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .lottie-reverse {
